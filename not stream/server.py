@@ -24,8 +24,8 @@ def run():
     #注册Bili这个类到GRPC里面,传入的第一个参数就是Bili()的实例化对象
     pb2_grpc.add_BiliServicer_to_server(Bili(),grpc_server)
     #绑定ip(这里一定要用insecure_port)
-    grpc_server.add_insecure_port('0.0.0.0:5000')
-    print('server will start at 0.0.0.0:5000')
+    grpc_server.add_insecure_port('0.0.0.0:8000')
+    print('server will start at 0.0.0.0:8000')
 #3. 启动server
     grpc_server.start()
 

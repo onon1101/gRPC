@@ -6,7 +6,7 @@ import hello_GRPC_pb2_grpc as pb2_grpc
 
 def run():
     # 先定义一个频道
-    conn = grpc.insecure_channel('localhost:5000')
+    conn = grpc.insecure_channel('localhost:8000')
 
     #设定客户端的频道
     client = pb2_grpc.BiliStub(channel=conn)
